@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --color-bg: #1f1f38;
+    --color-bg-variant: #3061E3;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255, 0.6);
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md:86%;
+    --container-width-ms: 90%;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    /*background: var(--color-bg);
+    color: var(--color-white);*/
+    line-height: 1.7;
+    
+
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section > h2, section>h5{
+  text-align: center;
+  color: var(--color-light);
+}
+section > h2{
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.text-light{
+  color: var(--color-light);
+  transition: var(--transition);
+}
+a{
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover{
+  color: var(--color-white);
+}
+.btn{
+  width:max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius:0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+.btn:hover{
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary{
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+img{
+  display:block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Parallax {
+    display: flex;
+    justify-content: center;
+  
+    /*&__background,
+    &__background-eggman {
+      position: ;
+    }*/
+  
+    &__background {
+      background-image: url("./assets/background2.png");
+      background-size: cover;
+      position: fixed;
+      width: 300%;
+      height: 100%;
+      background-attachment: fixed;
+      background-repeat: repeat-x;/*this doesnt work. need another method to duplicate background repeatedly*/
+    }
+  
+    &__background-eggman {
+      background-size: cover;
+      width: 24%;
+      height: 32%;
+      background-image: url("./assets/eggman.gif");
+      position: absolute ;
+      
+      background-attachment: fixed;
+    }
+
+    &__background-sonic {
+      background-size: cover;
+      width: 11rem;
+      height: 11rem;
+      background-image: url("./assets/sonic.gif");
+      position: absolute ;
+      background-attachment: fixed;
+      top: 38rem;
+    }
+  
+    &__content {
+      width:  80%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      margin-top: 100px;
+  
+      &__heading,
+      &__cta {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      &__heading {
+        background-color: hsl(0, 0%, 100%,1);;
+        width: 40%;
+        padding: 40px;
+  
+        &__text {
+          margin: 10px 0;
+          font-size: 60px;
+          color: #3061E3;
+          
+        }
+  
+        &__caption {
+          margin: 0;
+          font-size: 20px;
+          color: red;
+        }
+      }
+
+      &__Intro {
+        background-color: hsla(235, 85%, 3%, 0.5);
+        width: 60%;
+        padding: 40px;
+  
+        font-size: 20px;
+        color: #fff;
+  
+        margin-top: 8rem;
+      }
+
+      &__Nav {
+        width: 60%;
+        padding: 40px;
+        font-size: 20px;
+        color: #fff;
+  
+        margin-top: 8rem;
+      }
+
+      &__About {
+        width: 60%;
+        padding: 40px;
+        background-color: hsla(235, 85%, 3%, 0.5);
+        font-size: 20px;
+        color: #fff;
+  
+        margin-top: 8rem;
+      }
+
+      &__Projects {
+        width: 60%;
+        padding: 40px;
+  
+        font-size: 20px;
+        color: #fff;
+  
+        margin-top: 8rem;
+      }
+
+      &__Skills {
+        width: 60%;
+        padding: 40px;
+  
+        font-size: 20px;
+        color: #fff;
+  
+        margin-top: 8rem;
+      }
+
+      &__Education {
+        width: 60%;
+        padding: 40px;
+        background-color: hsla(235, 85%, 3%, 0.5);
+        font-size: 20px;
+        color: white;
+  
+        margin-top: 8rem;
+      }
+
+    }
+  }
+/*=======================================================    MEDIA QUERIES (MEDIUM DEVICES)  ===========================*/
+@media screen and (max-width: 1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+  .Parallax__content__heading__text{
+    font-size: 3rem;
+  }
+
+  .Parallax{
+    &__background-sonic {
+      background-size: cover;
+      width: 5rem;
+      height: 5rem;
+      background-image: url("./assets/sonic.gif");
+      position: absolute ;
+      background-attachment: fixed;
+      top: 65%;
+    }
+
+    &__background-eggman {
+      width: 26%;
+      height: 20%;
+      top: 25%;
+    }
+  }
+
+  
+}
+
+@media screen and (max-width: 600px){
+  .container{
+    width: var(--container-width-sm);
+  }
+  .Parallax__content__heading__text{
+    font-size: 1.5rem;
+  }
+  .Parallax__content__heading__caption{
+    font-size: .8rem;
+  }
+  .Parallax{
+    &__background-sonic {
+      width: 2rem;
+      height: 2rem;
+      background-attachment: fixed;
+      top: 65%;
+    }
+
+    &__background-eggman {
+      width: 12%;
+      height: 12%;
+      top: 25%;
+    }
+  }
+  
+  
+}

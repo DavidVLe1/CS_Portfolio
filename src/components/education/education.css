@@ -1,0 +1,49 @@
+.container{
+    position: relative;
+}
+table {border: none;}
+.left{
+    float: left;
+    width: 60%;
+}
+.right{
+    float:right;
+    width: 10%;
+    text-align: right;
+}
+h1{
+    font-size: 2rem;
+}
+.iconSXU{
+    background: url('../../assets/iconSXU.gif');
+    
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: 45%;
+    background-repeat: no-repeat;
+    left: 80%;
+    bottom:250px;
+    transform: translateY(5rem);
+    overflow: hidden;
+    background-size: cover;
+    border: none;
+    float: right;
+    
+}
+.iconUIC{
+    background: url('../../assets/iconUIC.png');
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: 45%;
+    background-repeat: no-repeat;
+    left: 80%;
+    bottom:5rem;
+    transform: translateY(5rem);
+    overflow: hidden;
+    background-size: cover;
+    border: none;
+    float: right;
+    
+}
