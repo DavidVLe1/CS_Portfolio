@@ -34,7 +34,7 @@ header{
 .me{
     background: linear-gradient(var(--color-primary));
     width: 22rem;
-    height: 29rem;
+    height: 27rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
