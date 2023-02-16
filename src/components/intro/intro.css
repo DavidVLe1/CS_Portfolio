@@ -54,18 +54,28 @@ header{
     clear: both;
   }
 
-  @media screen and (max-width:1024px) {
+  @media screen and (max-width:1630px) {
     header{
         height:68vh;
     }
     .me{
-        width: 9rem;
+        width: 15rem;
+        height: 20rem;
+    }
+    
+  }
+
+  
+  @media screen and (max-width:1160px) {
+    header{
+        height:68vh;
+    }
+    .me{
+        width: 10rem;
         height: 13rem;
     }
-    .myName{
-        font-size: 2rem;
-    }
   }
+  
 
   @media screen and (max-width:600px){
     header{

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -39,8 +38,6 @@ html{
 
 body{
     font-family: 'Oswald', sans-serif;
-    /*background: var(--color-bg);
-    color: var(--color-white);*/
     line-height: 1.7;
     
 
@@ -103,25 +100,19 @@ img{
     display: flex;
     justify-content: center;
   
-    /*&__background,
-    &__background-eggman {
-      position: ;
-    }*/
   
     &__background {
       background-image: url("./assets/background2.png");
       background-size: cover;
       position: fixed;
-      width: 300%;
+      width: 10000px;
       height: 100%;
       background-attachment: fixed;
-      background-repeat: repeat-x;/*this doesnt work. need another method to duplicate background repeatedly*/
     }
   
     &__background-eggman {
-      background-size: cover;
       width: 24%;
-      height: 32%;
+      height: 30%;
       background-image: url("./assets/eggman.gif");
       position: absolute ;
       
@@ -236,6 +227,14 @@ img{
 
     }
   }
+
+  @media screen and (max-width: 1700px){
+    .Parallax{
+      &__background-eggman{
+        visibility: hidden;
+      }
+  }
+}
 /*=======================================================    MEDIA QUERIES (MEDIUM DEVICES)  ===========================*/
 @media screen and (max-width: 1024px){
   .container{
@@ -256,14 +255,11 @@ img{
       top: 65%;
     }
 
-    &__background-eggman {
-      width: 26%;
-      height: 20%;
-      top: 25%;
+    &__background-eggman{
+      visibility: hidden;
     }
   }
 
-  
 }
 
 @media screen and (max-width: 600px){
@@ -285,11 +281,10 @@ img{
     }
 
     &__background-eggman {
-      width: 12%;
-      height: 12%;
-      top: 25%;
+      visibility: hidden;
     }
   }
+  
   
   
 }
