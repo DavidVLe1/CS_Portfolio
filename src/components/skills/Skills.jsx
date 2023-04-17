@@ -1,14 +1,13 @@
-import React from 'react'
-import './skills.css'
-import javascriptIcon from '../../assets/js.png'
-import pythonIcon from '../../assets/python.png'
-import javaIcon from '../../assets/java.png'
-import kotlinIcon from '../../assets/kotlin.svg'
-import phpIcon from '../../assets/php.png'
-import typeScriptIcon from '../../assets/typescript.png'
-import sqlIcon from '../../assets/sql.png'
-import cplusplusIcon from '../../assets/cplusplus.png'
-import rIcon from '../../assets/letterR.png'
+import React from 'react';
+import javascriptIcon from '../../assets/js.png';
+import pythonIcon from '../../assets/python.png';
+import javaIcon from '../../assets/java.png';
+import kotlinIcon from '../../assets/kotlin.svg';
+import phpIcon from '../../assets/php.png';
+import typeScriptIcon from '../../assets/typescript.png';
+import sqlIcon from '../../assets/sql.png';
+import cplusplusIcon from '../../assets/cplusplus.png';
+import rIcon from '../../assets/letterR.png';
 
 const Skills = () => {
   return (

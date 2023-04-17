@@ -2,10 +2,12 @@
   
   .container1{
     position: relative;
+    height: 19rem;
     
   }
-  .container1 .card:hover{
+  .container1:hover{
     background-color: black;
+    transition: 0.5s;
   }
   
   
@@ -159,9 +161,10 @@
  
   
   .carousel__navigation {
+    
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -3rem;
     left: 0;
     text-align: center;
   }
@@ -172,7 +175,7 @@
   }
   
   .carousel__navigation-button {
-    display: inline-block;
+    display: block;
     width: 1.5rem;
     height: 1.5rem;
     background-color:white;

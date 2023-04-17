@@ -5,6 +5,7 @@
   }
   
   .container .card{
+    
     position: relative;
     width: 10rem;
     height: 15rem;
@@ -115,16 +116,11 @@
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 1600px) {
     .columnskills {
-      width:40%;
+      width:48%;
     }
   }
   
-  
-  @media screen and (max-width: 1000px) {
-    .columnskills {
-      width: 100%;
-    }
-  }
+
   
   
   

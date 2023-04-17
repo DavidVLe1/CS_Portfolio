@@ -19,8 +19,7 @@ const Projects = () => {
               <img src={movieReviewsPic} alt="Movie Review site project" />
             </div>
             <div class="contentBx">
-              <h2>I made a Full-Stack website where users can look for movies to review and are able to change or delete it 
-                thanks to using React.JS and Node.JS for the frontend and MongoDB, Node.JS and Express.JS for the backend.</h2>
+              <h7>This is a Full-Stack site that uses the MERN stack. The website allows users to search for movies, review them, and make changes or deletions as necessary.</h7>
             </div>
           </div>
       </div>
@@ -33,8 +32,7 @@ const Projects = () => {
               <img src={ezfittrainerPic} alt="fitness Training Application" />
             </div>
             <div class="contentBx">
-              <h2>I built an android app built for users to follow workout guides and calculate their calories burned 
-                during exercise which can then be compared to the previous day using Kotlin and JS.</h2>
+              <h7>I developed an Android app using Kotlin and JS that enables users to track their workouts, calculate calories burned, and compare their progress with the previous day.</h7>
             </div>
           </div>
     </li>
@@ -46,8 +44,7 @@ const Projects = () => {
               <img src={messagingAppPic} alt="Online Messaging website" />
             </div>
             <div class="contentBx">
-              <h2>I manufactured a simple messaging web app where multiple users can communicate 
-                with eachother through the use of sockets, TypeScript, Angular.JS, and JS.</h2>
+              <h7>I developed a messaging web application that facilitates communication between multiple users through the use of sockets, TypeScript, Angular.JS, and JS.</h7>
             </div>
           </div>
 
@@ -63,8 +60,8 @@ const Projects = () => {
               <img src={giphyClonePic} alt="Giphy website" />
             </div>
             <div class="contentBx">
-              <h2>I created a modified version of the Giphy website using Giphy's API to retrieve images while JavaScript
-                 and PHP were used to get the users requests and load more images.</h2>
+              <h7>Created a customized version of the Giphy website, utilizing Giphy's API to retrieve images. 
+                JS and PHP were leveraged to facilitate user requests and enable the loading of additional images.</h7>
             </div>
           </div>
     </li>
