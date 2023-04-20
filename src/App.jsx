@@ -50,7 +50,7 @@ const App = () => {
     <section className="Parallax">
       <div
         className="Parallax__background"
-        style={{ transform: `translate(${-offsetY*.3-500}px,0px)` }}//offset whitespace background 
+        style={{ transform: `translate(${-offsetY*.3-20}px,0px)` }}//offset whitespace background 
       />
       
       

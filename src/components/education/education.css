@@ -17,10 +17,9 @@ h1{
 .iconSXU{
     background: url('../../assets/iconSXU.gif');
     
-    display: block;
+    display: none;
     position: absolute;
-    width: 25%;
-    height: 45%;
+    
     background-repeat: no-repeat;
     left: 80%;
     bottom:250px;
@@ -33,10 +32,8 @@ h1{
 }
 .iconUIC{
     background: url('../../assets/iconUIC.png');
-    display: block;
+    display: none;
     position: absolute;
-    width: 25%;
-    height: 45%;
     background-repeat: no-repeat;
     left: 80%;
     bottom:5rem;
@@ -47,21 +44,19 @@ h1{
     float: right;
     
 }
-@media screen and (max-width: 1624px){
+
+@media screen and (min-width: 624px){
     .iconSXU{
-        display: none;
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        left: 32rem;
     }
     .iconUIC{
-        display: none;
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        left: 32rem;
     }
     
-  }
-  
-@media screen and (max-width: 600px){
-    .iconUIC{
-        display: none;
-    }
-    .iconSXU{
-        display: none;
-    }
   }
