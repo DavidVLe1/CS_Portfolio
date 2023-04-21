@@ -4,12 +4,14 @@ header{
     padding-bottom: 3rem;
     padding-right: 1rem;
 }
-.text-light{
-    padding-top: 3rem;
+.jobTitle{
+    color: white;
+    padding-top: 1rem;
     padding-bottom: 3.5rem;
 }
 .icon{
     font-size: 3rem;
+    
 }
 .header__container{
     text-align: center;

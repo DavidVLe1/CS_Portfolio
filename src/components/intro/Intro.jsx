@@ -12,7 +12,7 @@ function Intro() {
       </div></div>
       <div className='column'><div className='container header__container'>
       <h1 className='myName'>David Le</h1>
-      <h2 className='text-light'>Web Developer <br/>Chicago, IL</h2>
+      <h2 className='jobTitle'><strong>Web Developer <br/>Chicago, IL</strong></h2>
       <CTA/>
       <IntroSocials/></div>
       </div>

@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,400;0,700;0,800;0,900;1,600;1,700;1,800&display=swap');
+
+
+
 h1{
   color: white;
+  font-family: 'Oswald', sans-serif;
+  
 }
 html, body {
   max-width: 100%;
-  
+  font-family: 'Poppins', sans-serif;
   background-color: #3061E3;
 }
 *{
+    
     margin: 0;
     padding: 0;
     border: 0;
@@ -160,7 +167,7 @@ img{
         margin-left: calc(50% - 50vw);
         width: 90vw;
         padding: 1rem;
-        background-color: hsla(235, 85%, 3%, 0.5);
+        background-color: hsl(235, 87%, 3%);
         font-size: 1rem;
         color: #fff;
   
@@ -180,7 +187,7 @@ img{
       &__Education {
         width: 90vw;
         padding: 40px;
-        background-color: hsla(235, 85%, 3%, 0.5);
+        background-color: hsla(235, 87%, 3%, 0.911);
         font-size: 20px;
         color: white;
   
