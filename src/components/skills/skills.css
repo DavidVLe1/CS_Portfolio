@@ -1,0 +1,128 @@
+
+  
+  .container{
+    position: relative;
+  }
+  
+  .container .card{
+    
+    position: relative;
+    width: 10rem;
+    height: 15rem;
+    background: #232323;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    clip-path: circle(5rem at 20% 100%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container .card:hover:before{
+    clip-path: circle(5rem at 100% -10%);
+  }
+  
+  .container .card:after{
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,25,0.05)
+  }
+  
+  .container .card .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 2rem;
+    transition: 0.5s;
+  }
+  
+  .container .card:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container .card .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%) ;
+    width: 6rem;
+  }
+  
+  .container .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+    opacity: 0;
+  }
+  
+  .container .card:hover .contentBx{
+    height: 5rem;
+    opacity: 1;
+  }
+  
+  .container .card .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  
+  
+  .container .card .contentBx .size h3, .container .card .contentBx .color h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+  
+  .columnskills {
+    float: left;
+    margin: .1rem;
+    width: 30%;
+    padding: .5rem;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (min-width: 624px) {
+    .columnskills {
+      width:48%;
+      left: 0%;
+    }
+  }
+  
+
+  
+  
+  
+  

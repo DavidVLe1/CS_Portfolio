@@ -8,6 +8,7 @@ import typeScriptIcon from '../../assets/typescript.png';
 import sqlIcon from '../../assets/sql.png';
 import cplusplusIcon from '../../assets/cplusplus.png';
 import rIcon from '../../assets/letterR.png';
+import "./skills.css"
 
 const Skills = () => {
   return (
